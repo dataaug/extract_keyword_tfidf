@@ -90,7 +90,7 @@ def get_keywords(corpus, nlp = '', top_n=TOP_N, threshold=TFIDF_THRESHOLD):
     return terms, keywords, tfidfs, all_keywords
 
 if __name__ == "__main__":
-    with open('./data/baidu_stopwords.txt', 'r', encoding='utf-8') as fr:
+    with open('./data/hit_stopwords.txt', 'r', encoding='utf-8') as fr:
         stopwords = fr.readlines()
         stopwords = [x.strip() for x in stopwords]
         STOPWORDS = set([stopword for stopword in stopwords if stopword])
