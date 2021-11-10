@@ -95,7 +95,7 @@ if __name__ == "__main__":
         stopwords = [x.strip() for x in stopwords]
         STOPWORDS = set([stopword for stopword in stopwords if stopword])
 
-    with open('./data/hit_stopwords.txt', 'r', encoding='utf-8') as fr:
+    with open('./data/data.txt', 'r', encoding='utf-8') as fr:
         lines = fr.readlines()
     data = [x.strip() for x in lines]
     data = [list(jieba.cut(x)) for x in data]
