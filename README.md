@@ -21,3 +21,4 @@
 python3 extract.py
 ```
 
+### 数据量过大时运算速度将难以接受，请转至[借助ES数据库提取关键字](https://github.com/dataaug/extract_keywords_ElasticSearch)
